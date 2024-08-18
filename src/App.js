@@ -3,15 +3,14 @@ import Profile from './components/Profile';
 import EditProfile from './components/EditProfile';
 import ActivityHistory from './components/ActivityHistory';
 import Settings from './components/Settings';
-import './App.css';
-
+import './styles.css';
 import Profilephoto from './Profile.png';
 
 const App = () => {
   const [user, setUser] = useState({
     name: 'Chinmay Ghatule',
     email: 'chinmay@example.com',
-    profilePicture: Profilephoto, 
+    profilePicture: Profilephoto, // Correctly use the imported image variable
   });
 
   const [activities, setActivities] = useState([
@@ -32,6 +31,7 @@ const App = () => {
   const handleCancelClick = () => setIsEditing(false);
   const handleLogout = () => {
     alert('Logged out');
+    // Implement logout logic here
   };
 
   return (

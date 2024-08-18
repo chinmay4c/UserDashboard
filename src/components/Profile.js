@@ -6,7 +6,7 @@ const Profile = ({ user, onEditClick }) => {
       <img src={user.profilePicture} alt="Profile" className="profile-picture" />
       <h2>{user.name}</h2>
       <p>Email: {user.email}</p>
-      <button onClick={onEditClick}>Edit Profile</button>
+      <button className="edit-button" onClick={onEditClick}>Edit Profile</button>
     </div>
   );
 };

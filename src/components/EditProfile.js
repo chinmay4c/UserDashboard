@@ -23,8 +23,10 @@ const EditProfile = ({ user, onSaveClick, onCancelClick }) => {
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Email"
       />
-      <button onClick={handleSave}>Save</button>
-      <button onClick={onCancelClick}>Cancel</button>
+      <div className="edit-profile-buttons">
+        <button className="save-button" onClick={handleSave}>Save</button>
+        <button className="cancel-button" onClick={onCancelClick}>Cancel</button>
+      </div>
     </div>
   );
 };

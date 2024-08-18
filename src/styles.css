@@ -11,8 +11,36 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  color: #007bff;
+  margin: 0;
+}
+
+.settings-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.settings-button:hover {
+  background-color: #0056b3;
 }
 
 .profile {
@@ -42,7 +70,7 @@ body {
   color: #555;
 }
 
-.profile button {
+.edit-button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -53,7 +81,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.profile button:hover {
+.edit-button:hover {
   background-color: #0056b3;
 }
 
@@ -76,7 +104,12 @@ body {
   font-size: 16px;
 }
 
-.edit-profile button {
+.edit-profile-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-button {
   background-color: #28a745;
   color: #fff;
   border: none;
@@ -87,15 +120,22 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.edit-profile button:hover {
+.save-button:hover {
   background-color: #218838;
 }
 
-.edit-profile button.cancel {
+.cancel-button {
   background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-.edit-profile button.cancel:hover {
+.cancel-button:hover {
   background-color: #c82333;
 }
 
@@ -133,18 +173,7 @@ body {
   margin-bottom: 15px;
 }
 
-.settings label {
-  margin-right: 10px;
-}
-
-.settings select {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.settings button {
+.logout-button {
   background-color: #dc3545;
   color: #fff;
   border: none;
@@ -155,6 +184,17 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.settings button:hover {
+.logout-button:hover {
   background-color: #c82333;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 900px;
 }

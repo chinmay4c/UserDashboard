@@ -10,7 +10,7 @@ const App = () => {
   const [user, setUser] = useState({
     name: 'Chinmay Ghatule',
     email: 'chinmay@example.com',
-    profilePicture: Profilephoto, // Correctly use the imported image variable
+    profilePicture: Profilephoto,
   });
 
   const [activities, setActivities] = useState([
@@ -36,6 +36,12 @@ const App = () => {
 
   return (
     <div className="app">
+      <div className="dashboard-header">
+        <h1>User Dashboard</h1>
+        <button className="settings-button" onClick={() => setIsSettingsVisible(!isSettingsVisible)}>
+          {isSettingsVisible ? 'Close Settings' : 'Open Settings'}
+        </button>
+      </div>
       {!isSettingsVisible && (
         <>
           {isEditing ? (
@@ -50,7 +56,7 @@ const App = () => {
           <ActivityHistory activities={activities} />
         </>
       )}
-      <Settings onLogout={handleLogout} />
+      {isSettingsVisible && <Settings onLogout={handleLogout} />}
     </div>
   );
 };

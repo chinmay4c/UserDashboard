@@ -12,6 +12,9 @@ You can view the live application at: [User Dashboard](https://userdashboard-one
 - **Activity History**: Track user activities with a list of recent actions.
 - **Settings**: Access and perform actions like logout.
 
+![image](https://github.com/user-attachments/assets/3531cc79-6814-4871-873b-33aeae42dc7d)
+
+
 ## Getting Started
 
 ### Prerequisites
